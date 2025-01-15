@@ -22,35 +22,35 @@ label {
     float: right;
 }
 
-/* Style the container */
+/* Container */
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
   }
 
-/* Floating column for labels: 25% width */
+/* Colonnes pour les labels */
 .col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
 
-/* Floating column for inputs: 75% width */
+/* Colonne pour les inputs: 75% width */
 .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
 
-/* Clear floats after the columns */
+/* Clear le float */
 .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Stacker les colonnes pour être responsive */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
